@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EVA3_5_PERSISTENCIA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcf-rE-wp8">
+                                <rect key="frame" x="20" y="76" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.45890554112236681" green="1" blue="0.74498342355213309" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.42986023723649236" blue="0.30783670118549911" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2F-Uw-O1Y">
+                                <rect key="frame" x="122" y="285" width="56" height="30"/>
+                                <color key="backgroundColor" red="0.45890554109999998" green="1" blue="0.74498342360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleShadowColor" red="1" green="0.83998929080776308" blue="0.1427736158542845" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGuardar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgE-Ns-ys4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVa-8x-OCi">
+                                <rect key="frame" x="20" y="462" width="560" height="21"/>
+                                <color key="backgroundColor" red="0.5556417461234413" green="0.80876699084711912" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.1137435562701089" blue="0.15149922427916063" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.5556417461234413" green="0.80876699084711912" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhc-ep-dBf">
+                                <rect key="frame" x="464" y="285" width="31" height="30"/>
+                                <color key="backgroundColor" red="0.45890554112236681" green="1" blue="0.74498342355213309" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Leer"/>
+                                <connections>
+                                    <action selector="btnLeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngF-eJ-w7N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fhc-ep-dBf" secondAttribute="trailing" constant="85" id="50Z-ex-qPt"/>
+                            <constraint firstItem="lcf-rE-wp8" firstAttribute="trailing" secondItem="CVa-8x-OCi" secondAttribute="trailing" id="JP8-vf-bqW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CVa-8x-OCi" secondAttribute="bottom" constant="117" id="NTS-nI-nyy"/>
+                            <constraint firstItem="C2F-Uw-O1Y" firstAttribute="baseline" secondItem="Fhc-ep-dBf" secondAttribute="baseline" id="i0q-Bw-f7m"/>
+                            <constraint firstItem="C2F-Uw-O1Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="122" id="j6e-3j-wOQ"/>
+                            <constraint firstItem="lcf-rE-wp8" firstAttribute="leading" secondItem="CVa-8x-OCi" secondAttribute="leading" id="mEN-On-pnC"/>
+                            <constraint firstItem="C2F-Uw-O1Y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pZc-HK-cze"/>
+                            <constraint firstItem="lcf-rE-wp8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rgb-xi-u00"/>
+                            <constraint firstItem="lcf-rE-wp8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="ymm-Ff-6V3"/>
+                            <constraint firstItem="lcf-rE-wp8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ysw-mx-L9f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblMostrar" destination="CVa-8x-OCi" id="HDs-Ju-TCy"/>
+                        <outlet property="txtFldDatos" destination="lcf-rE-wp8" id="VDB-Yc-kgp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>

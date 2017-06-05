@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EVA3_6_PERSISTENCIA_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v0s-yX-ugh">
+                                <rect key="frame" x="18" y="66" width="564" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LYI-3q-UJa">
+                                <rect key="frame" x="18" y="138" width="564" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rXf-eV-8tv">
+                                <rect key="frame" x="18" y="207" width="564" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zri-kK-l3a">
+                                <rect key="frame" x="120" y="285" width="56" height="30"/>
+                                <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="btnGuardar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="guA-Fe-Xyd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2E-gU-exI">
+                                <rect key="frame" x="419" y="285" width="66" height="30"/>
+                                <state key="normal" title="Visualizar"/>
+                                <connections>
+                                    <action selector="btnVisualizar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fCP-Md-fzQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i4-12-hDP">
+                                <rect key="frame" x="255" y="363" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ch7-XM-Sj5">
+                                <rect key="frame" x="20" y="416" width="560" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="2cL-3s-K5L"/>
+                                    <constraint firstAttribute="height" constant="128" id="K0e-eq-f7E"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v0s-yX-ugh" firstAttribute="trailing" secondItem="LYI-3q-UJa" secondAttribute="trailing" id="7Qt-MA-hf3"/>
+                            <constraint firstItem="LYI-3q-UJa" firstAttribute="trailing" secondItem="rXf-eV-8tv" secondAttribute="trailing" id="Brn-Bc-byH"/>
+                            <constraint firstItem="rXf-eV-8tv" firstAttribute="centerX" secondItem="9i4-12-hDP" secondAttribute="centerX" id="Hak-Q9-Uy9"/>
+                            <constraint firstItem="LYI-3q-UJa" firstAttribute="top" secondItem="v0s-yX-ugh" secondAttribute="bottom" constant="42" id="JLw-TH-LAu"/>
+                            <constraint firstItem="v0s-yX-ugh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="Jap-jm-HTl"/>
+                            <constraint firstItem="Zri-kK-l3a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="125" id="KtL-uy-cqU"/>
+                            <constraint firstItem="rXf-eV-8tv" firstAttribute="top" secondItem="LYI-3q-UJa" secondAttribute="bottom" constant="39" id="M1N-VL-Npd"/>
+                            <constraint firstItem="v0s-yX-ugh" firstAttribute="leading" secondItem="LYI-3q-UJa" secondAttribute="leading" id="Oqa-Rk-bmC"/>
+                            <constraint firstAttribute="trailing" secondItem="t2E-gU-exI" secondAttribute="trailing" constant="125" id="U23-Wm-VN2"/>
+                            <constraint firstItem="9i4-12-hDP" firstAttribute="centerX" secondItem="Ch7-XM-Sj5" secondAttribute="centerX" id="XLG-lR-TgG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ch7-XM-Sj5" secondAttribute="bottom" constant="56" id="bf7-gd-X9E"/>
+                            <constraint firstItem="Zri-kK-l3a" firstAttribute="baseline" secondItem="t2E-gU-exI" secondAttribute="baseline" id="cX8-Cx-3H0"/>
+                            <constraint firstItem="v0s-yX-ugh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="g9o-Wq-7jq"/>
+                            <constraint firstItem="v0s-yX-ugh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iMe-wc-bdz"/>
+                            <constraint firstItem="Zri-kK-l3a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nTL-o8-zmi"/>
+                            <constraint firstItem="LYI-3q-UJa" firstAttribute="leading" secondItem="rXf-eV-8tv" secondAttribute="leading" id="rRe-7y-dsc"/>
+                            <constraint firstItem="Ch7-XM-Sj5" firstAttribute="top" secondItem="9i4-12-hDP" secondAttribute="bottom" constant="32" id="xYt-51-N6s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblInfomarcion" destination="9i4-12-hDP" id="231-UO-1xT"/>
+                        <outlet property="txtVwDatos" destination="Ch7-XM-Sj5" id="u68-i6-4vq"/>
+                        <outletCollection property="misSliders" destination="v0s-yX-ugh" collectionClass="NSMutableArray" id="CPv-98-1HF"/>
+                        <outletCollection property="misSliders" destination="LYI-3q-UJa" collectionClass="NSMutableArray" id="zLK-TF-g8g"/>
+                        <outletCollection property="misSliders" destination="rXf-eV-8tv" collectionClass="NSMutableArray" id="xqo-IE-8eZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="490"/>
+        </scene>
+    </scenes>
+</document>
