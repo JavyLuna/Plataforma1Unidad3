@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EVA3_8_AGREGAR_DATOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syd-M1-imk">
+                                <rect key="frame" x="527" y="56" width="61" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="cwY-1i-ef1"/>
+                                </constraints>
+                                <state key="normal" title="Capturar"/>
+                                <connections>
+                                    <action selector="capturaDatos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="het-wU-n3y"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B8f-Y3-G4S">
+                                <rect key="frame" x="20" y="112" width="560" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" id="CWi-b7-V5h">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CWi-b7-V5h" id="KmC-RF-8FI">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="W2O-8E-w2o"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vLc-oX-lgc"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZt-ti-gfy">
+                                <rect key="frame" x="20" y="57" width="505" height="30"/>
+                                <color key="backgroundColor" red="0.18853295473662046" green="0.92976796627044678" blue="0.91145524060557637" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.92976796627044678" green="0.0" blue="0.0095465461355511618" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B8f-Y3-G4S" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="64N-B1-Nyv"/>
+                            <constraint firstItem="B8f-Y3-G4S" firstAttribute="top" secondItem="LZt-ti-gfy" secondAttribute="bottom" constant="25" id="DmH-Vp-xj9"/>
+                            <constraint firstItem="Syd-M1-imk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="Gbp-wR-YQP"/>
+                            <constraint firstItem="LZt-ti-gfy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MIU-1A-jOd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B8f-Y3-G4S" secondAttribute="bottom" constant="8" symbolic="YES" id="aRI-aY-ISm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Syd-M1-imk" secondAttribute="trailing" constant="-8" id="lTF-AH-f6d"/>
+                            <constraint firstItem="LZt-ti-gfy" firstAttribute="baseline" secondItem="Syd-M1-imk" secondAttribute="baseline" id="nRb-nR-GdC"/>
+                            <constraint firstItem="Syd-M1-imk" firstAttribute="leading" secondItem="LZt-ti-gfy" secondAttribute="trailing" constant="2" id="qMI-hN-5wM"/>
+                            <constraint firstItem="LZt-ti-gfy" firstAttribute="leading" secondItem="B8f-Y3-G4S" secondAttribute="leading" id="z9V-Yd-epn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tlbVwLista" destination="B8f-Y3-G4S" id="186-0H-bvI"/>
+                        <outlet property="txtFldDatos" destination="LZt-ti-gfy" id="WIT-rn-QFw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="417"/>
+        </scene>
+    </scenes>
+</document>
